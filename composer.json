@@ -1,0 +1,35 @@
+{
+    "name": "josec/enlaces",
+    "description": "Proyecto sobre inscripciones de alumnos a cursos, gráficas, sesiones",
+    "type": "project",
+    "require": {
+        "spiritix/php-chrome-html2pdf": "dev-master",
+        "setasign/fpdf": "1.8",
+        "dompdf/dompdf": "dev-master",
+        "phpunit/phpunit": "^11.0@dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "Controller/"
+        }
+    },
+    "authors": [
+        {
+            "name": "joser3d2",
+            "email": "josecanpop@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "eloquent/composer-npm-bridge": true,
+            "symfony/flex": true
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Test\\": "Test/"
+        }
+      }
+}

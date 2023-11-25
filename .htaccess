@@ -1,0 +1,5 @@
+#Header set Content-Security-Policy "default-src 'self'"
+
+#<IfModule mod_rewrite.c>
+#    Header always set X-Frame-Options "SAMEORIGIN"
+#</IfModule>
