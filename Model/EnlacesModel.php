@@ -21,6 +21,7 @@ class EnlacesModel{
             "pdf" => "View/extras/pdf.php",
             "mostrarTablas" => "View/extras/mostrarTablas.php",
             "pdfCategoria" => "View/categorias/pdfCategorias.php",
+            "pdfUsuario" => "View/users/pdfUsuarios.php",
             "recibirCursoAjax" => "View/recibirCursoAjax.php",
             "enviarCursoAjax" => "View/enviarCursoAjax.php",
             default => "View/error.php"

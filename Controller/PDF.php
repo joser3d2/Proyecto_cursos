@@ -5,6 +5,7 @@ use FPDF;
 
 class PDF extends FPDF
 {
+    public $title="";
 // Page header
     function Header()
     {
@@ -15,7 +16,7 @@ class PDF extends FPDF
         // Move to the right
         $this->Cell(80);
         // Title
-        $this->Cell(30,10,'Title',1,0,'C');
+        $this->Cell(30,10,$this->title,1,0,'C');
         // Line break
         $this->Ln(20);
     }
@@ -31,4 +32,3 @@ class PDF extends FPDF
         $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
     }
 }
-?>
