@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dompdf/dompdf.git",
-                "reference": "6fc9993028a8551a2e93153299f0374299b2a25f"
+                "reference": "511e7e0a171deed4b4bf5214b95ef648cdb13c36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/6fc9993028a8551a2e93153299f0374299b2a25f",
-                "reference": "6fc9993028a8551a2e93153299f0374299b2a25f",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/511e7e0a171deed4b4bf5214b95ef648cdb13c36",
+                "reference": "511e7e0a171deed4b4bf5214b95ef648cdb13c36",
                 "shasum": ""
             },
             "require": {
@@ -69,7 +69,7 @@
                 "issues": "https://github.com/dompdf/dompdf/issues",
                 "source": "https://github.com/dompdf/dompdf/tree/master"
             },
-            "time": "2023-10-28T07:14:47+00:00"
+            "time": "2023-11-17T21:30:00+00:00"
         },
         {
             "name": "eloquent/composer-npm-bridge",
@@ -2105,12 +2105,11 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "spiritix/php-chrome-html2pdf": 20,
-        "dompdf/dompdf": 20,
         "phpunit/phpunit": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

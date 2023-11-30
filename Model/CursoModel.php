@@ -9,7 +9,7 @@ class CursoModel{
     public static function mostrarCurso(){
         $stmt = ConexionModel::conectar()->prepare("SELECT * FROM curso");
         $stmt->execute();
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
 }

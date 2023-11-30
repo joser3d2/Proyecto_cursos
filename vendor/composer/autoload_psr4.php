@@ -6,14 +6,15 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Test\\' => array($baseDir . '/Test'),
     'Svg\\' => array($vendorDir . '/phenx/php-svg-lib/src/Svg'),
     'Spiritix\\Html2Pdf\\' => array($vendorDir . '/spiritix/php-chrome-html2pdf/src/Spiritix/Html2Pdf'),
     'Sabberworm\\CSS\\' => array($vendorDir . '/sabberworm/php-css-parser/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
-    'Josec\\Cursos\\' => array($baseDir . '/src'),
     'FontLib\\' => array($vendorDir . '/phenx/php-font-lib/src/FontLib'),
     'Eloquent\\Composer\\NpmBridge\\' => array($vendorDir . '/eloquent/composer-npm-bridge/src'),
     'Dompdf\\' => array($vendorDir . '/dompdf/dompdf/src'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
+    'Controller\\' => array($baseDir . '/Controller'),
 );

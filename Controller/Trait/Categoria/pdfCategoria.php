@@ -1,5 +1,5 @@
 <?php
-namespace Controller;
+
 require 'vendor/autoload.php'; //Composer
 //require 'vendor/autoload.php';
 use FPDF;
@@ -34,7 +34,7 @@ function Footer()
 }
 }
 
-class PdfController{
+trait pdfCategoria{
     
     public function generate(){
         $pdf = new PDF();

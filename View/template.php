@@ -11,11 +11,11 @@ use Controller\PaginaController;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página que maneja enlaces</title>
     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
-    <link rel="stylesheet" href="View/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f31d6f48e7.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" type="image/x-icon" href="Assets/logo_inteacap.png">
+    <link rel="icon" type="image/x-icon" href="Assets/logo_intecap.ico">
 
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
@@ -37,7 +37,7 @@ use Controller\PaginaController;
 </head>
 <body>
 
-    <?php require_once("navbar.php"); ?>
+    <?php require_once("pages/navbar.php"); ?>
 
     <div class="container">
         <?php

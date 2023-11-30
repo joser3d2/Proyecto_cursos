@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dompdf/dompdf.git",
-                "reference": "6fc9993028a8551a2e93153299f0374299b2a25f"
+                "reference": "511e7e0a171deed4b4bf5214b95ef648cdb13c36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/6fc9993028a8551a2e93153299f0374299b2a25f",
-                "reference": "6fc9993028a8551a2e93153299f0374299b2a25f",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/511e7e0a171deed4b4bf5214b95ef648cdb13c36",
+                "reference": "511e7e0a171deed4b4bf5214b95ef648cdb13c36",
                 "shasum": ""
             },
             "require": {
@@ -38,7 +38,7 @@
                 "ext-imagick": "Improves image processing performance",
                 "ext-zlib": "Needed for pdf stream compression"
             },
-            "time": "2023-10-28T07:14:47+00:00",
+            "time": "2023-11-17T21:30:00+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "source",

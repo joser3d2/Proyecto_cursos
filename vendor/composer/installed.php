@@ -3,7 +3,7 @@
         'name' => 'josec/enlaces',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '5a6532d1d63048c8f384d157dea37854f587fb85',
+        'reference' => '699d9cc928f4f4d28786db219d1c1aee1bfa2e17',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'dompdf/dompdf' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '6fc9993028a8551a2e93153299f0374299b2a25f',
+            'reference' => '511e7e0a171deed4b4bf5214b95ef648cdb13c36',
             'type' => 'library',
             'install_path' => __DIR__ . '/../dompdf/dompdf',
             'aliases' => array(
@@ -33,7 +33,7 @@
         'josec/enlaces' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5a6532d1d63048c8f384d157dea37854f587fb85',
+            'reference' => '699d9cc928f4f4d28786db219d1c1aee1bfa2e17',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

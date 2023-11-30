@@ -4,7 +4,7 @@
   <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="https://intecap.edu.gt/wp-content/uploads/2021/06/logo-intecap.png" alt="Logo" width="80" height="40" class="d-inline-block align-text-top">
+      <img src="Assets/logo_intecap.png" alt="Logo" width="80" height="40" class="d-inline-block align-text-top">
     </a>
   </div>
 </nav>

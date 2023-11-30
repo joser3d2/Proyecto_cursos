@@ -12,6 +12,10 @@ class ComposerStaticInit7dc9aba679a7de8133bd5cbb66cd545d
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Test\\' => 5,
+        ),
         'S' => 
         array (
             'Svg\\' => 4,
@@ -26,10 +30,6 @@ class ComposerStaticInit7dc9aba679a7de8133bd5cbb66cd545d
         array (
             'Masterminds\\' => 12,
         ),
-        'J' => 
-        array (
-            'Josec\\Cursos\\' => 13,
-        ),
         'F' => 
         array (
             'FontLib\\' => 8,
@@ -43,9 +43,17 @@ class ComposerStaticInit7dc9aba679a7de8133bd5cbb66cd545d
             'Dompdf\\' => 7,
             'DeepCopy\\' => 9,
         ),
+        'C' => 
+        array (
+            'Controller\\' => 11,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Test\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Test',
+        ),
         'Svg\\' => 
         array (
             0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
@@ -66,10 +74,6 @@ class ComposerStaticInit7dc9aba679a7de8133bd5cbb66cd545d
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
-        'Josec\\Cursos\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'FontLib\\' => 
         array (
             0 => __DIR__ . '/..' . '/phenx/php-font-lib/src/FontLib',
@@ -85,6 +89,10 @@ class ComposerStaticInit7dc9aba679a7de8133bd5cbb66cd545d
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Controller',
         ),
     );
 
