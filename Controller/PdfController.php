@@ -1,51 +1,54 @@
 <?php
+/** 
+ * Generar PDF con DomPdf, etiquetas html
+ **/
 namespace Controller;
-require 'vendor/autoload.php'; //Composer
-//require 'vendor/autoload.php';
-use FPDF;
-
-
-class PDF extends FPDF
-{
-// Page header
-function Header()
-{
-    // Logo
-    $this->Image('Assets/logo_intecap.png',10,6,30);
-    // Arial bold 15
-    $this->SetFont('Arial','B',15);
-    // Move to the right
-    $this->Cell(80);
-    // Title
-    $this->Cell(30,10,'Title',1,0,'C');
-    // Line break
-    $this->Ln(20);
-}
-
-// Page footer
-function Footer()
-{
-    // Position at 1.5 cm from bottom
-    $this->SetY(-15);
-    // Arial italic 8
-    $this->SetFont('Arial','I',8);
-    // Page number
-    $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
-}
-}
+require 'vendor/autoload.php';
+use Dompdf\Dompdf;
+use Controller\UsuarioController;
 
 class PdfController{
     
+    /**
+     * @function generate generar el pdf conectandose a la BD
+     */
     public function generate(){
-        $pdf = new PDF();
-        $pdf->AliasNbPages();
-        $pdf->AddPage();
-        $pdf->SetFont('Times','',12);
-        for($i=1;$i<=40;$i++){
-            $pdf->Cell(0,10,'Printing line number '.$i,0,1);
+        $usuarios = new UsuarioController();
+        $listUsuarios = $usuarios->listarUsuarios();
+        $dompdf = new Dompdf();
+        $headerTable= '
+        <style>
+            body { background-color: white; }
+            p { background-color: white; }
+            table, th, td {
+                border: 1px solid;
+              }
+        </style>
+        
+        <h1>Listado de participantes</h1>
+        <br>
+        <center><p>Alumnos inscritos</p>
+        <center><table style="border: 1px solid black;">
+            <tr>Nombres</tr>
+            <tr>Apellidos</tr>
+            <tr>';
+
+        $footerTable='</table>';
+
+        $bodyTable="";
+        foreach($listUsuarios as $usuario){
+            $bodyTable = $bodyTable."<tr><td>".$usuario['nombres']."</td>"."<td>".$usuario['apellidos']."</td></tr>";
         }
+
+        $completeTable = $headerTable.$bodyTable.$footerTable;
+
+        $dompdf->loadHtml($completeTable);
+        $dompdf->render();
+        header("Content-type: application/pdf");
+        header("Content-Disposition: inline; filename=documento.pdf");
+        
         ob_end_clean();//Limpiar las etiquetas del header
-        $pdf->Output();
+        $dompdf->stream();//Descargar el pdf del navegador
     }
 }
 ?>

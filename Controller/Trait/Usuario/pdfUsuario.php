@@ -1,10 +1,17 @@
 <?php
+/*
+    Crear un pdf con los usuarios de la BD
+*/
 namespace Controller\Trait\Usuario;
 require_once('vendor/autoload.php'); //Composer
 
 use Controller\PDF;//Header y Footer
 
 trait pdfUsuario{
+    /*
+        @function pdfUsuarios, utiliza el método listarUsuarios() para conectarse a la BD
+        @output archivo pdf, antes de generarlo limpiamos los encabezados de html, y mostramos el pdf en el navegador.
+    */
     public function pdfUsuarios(){
         $usuarioAllDB = $this->listarUsuarios();
         $pdf = new PDF();

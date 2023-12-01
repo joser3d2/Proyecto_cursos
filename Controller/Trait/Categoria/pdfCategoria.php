@@ -9,7 +9,7 @@ trait pdfCategoria{
     public function pdfCategorias(){
         $categoriasAllDB = $this->mostrar();
         $pdf = new PDF();
-        $pdf->title="categoria";
+        $pdf->title="Categoria";
         $pdf->AliasNbPages();
         $pdf->AddPage();
         $pdf->SetFont('Times','',12);

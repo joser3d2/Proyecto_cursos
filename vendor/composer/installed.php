@@ -3,7 +3,7 @@
         'name' => 'josec/enlaces',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '699d9cc928f4f4d28786db219d1c1aee1bfa2e17',
+        'reference' => '8c0fa1608efd4f81469d01fc666e971eecb1d9ae',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -33,7 +33,7 @@
         'josec/enlaces' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '699d9cc928f4f4d28786db219d1c1aee1bfa2e17',
+            'reference' => '8c0fa1608efd4f81469d01fc666e971eecb1d9ae',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -2,7 +2,7 @@
 
 namespace Controller;
 use Model\CursoModel;
-
+$USUARIO = "d";
 class CursoController{
 
     public function mostrar(){
